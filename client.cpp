@@ -24,7 +24,9 @@ using namespace boost::asio;
 using namespace boost::asio::ip;
 
 /**
-* Usefull Typedefs : decribe boost shared pointers, and to avoid conflict w/ std shared pointers
+* Usefull Typedefs : define boost shared pointer,
+* to avoid conflit w/ standard smart pointers
+* and to reduce code length
 */
 typedef boost::shared_ptr< tcp::socket >         socket_ptr;
 typedef boost::shared_ptr< string >              string_ptr;
